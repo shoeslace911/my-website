@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Poiret+One&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color:white;
+    font-family: 'Poiret One', cursive;
+
+}
+body{
+    background: black;
+    background-blend-mode: difference;
+}
+nav{
+    margin-top:2%;
+    margin-left:1%;
+    margin-bottom:2%;
+    position:sticky;
+}
+
+/*   Classess   */
+
+/* hamburger */
+nav .hamburger{
+    background:white;
+    opacity:50%;
+    width:35px;
+    padding-bottom:1px;
+    margin-bottom:0.3%;
+    border-radius: 19%;
+}
+
+/* Introduction*/
+
+.introduction-container{
+position:absolute;
+top:20%;
+left:40px;
+}
+.introduction-img{
+    position:absolute;
+    right:2px;
+    top:0px;
+    width: 30vw;
+}
+.hello{
+    font-size:2vmax;
+}
+.name{
+    font-size: 10vmax;
+}
+.desc{
+    font-size:1.5vmax;
+}
