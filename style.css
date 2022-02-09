@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Poiret+One&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color:white;
+    font-family: 'Poiret One', cursive;
+
+}
+body{
+    background: black;
+}
+nav{
+    top:2vmax;
+    margin-left:1vmax;
+    position:sticky;
+    
+    
+}
+a{
+    text-decoration: inherit;
+}
+/*   Classess   */
+
+/* hamburger  and nav */
+
+.hamburger{
+background: white;
+width:2%;
+height: 2px;
+}
+.hamburger::before,
+.hamburger::after{
+    top:2vmax;
+    margin-left:1vmax;
+
+background: white;
+width:2%;
+height: 2px;
+}
+.hamburger::before{
+    content:'';
+    transform:translateY(1px);
+}
+.hamburger::after{
+
+}
+.nav-bar{
+    list-style-type: none;
+    position:fixed;
+    background:rgb(4, 4, 12);
+    width:100%;
+    min-height:100%;
+    overflow-y: hidden;
+    z-index: 1;
+    display: none;
+}
+@keyframes become-X {
+    0%{
+
+    }100%{
+        
+    }
+}
+.hamburger-inside-nav{
+    background:white;
+    opacity:50%;
+    width:2vmax;
+    padding-bottom:0.3vmin;
+    margin-bottom:0.3%;
+    border-radius: 19%;
+}
+@keyframes nav-right {
+    0%{    
+        margin-left:-10vmax;
+    }100%{
+        margin-left:8vmax;
+        opacity:1;
+    }
+}
+@keyframes down-top {
+    0%{
+        right:8vmax;
+        bottom:0vmax;
+        font-size:8vmax;
+    }100%{
+        
+    right:8vmax;
+    bottom:19vmax;
+    font-size:8vmax;
+    }
+    }
+.nav-bar ul li:nth-child(1){
+    animation:nav-right 1s ease-in forwards;
+}
+.nav-bar ul li:nth-child(2){
+    animation:nav-right 1s ease-in forwards;
+    animation-delay:0.3s;
+}
+.nav-bar ul li:nth-child(3){
+    animation:nav-right 1s ease forwards;
+    animation-delay:0.6s;
+}
+.nav-bar ul li:nth-child(4){
+    animation:nav-right 1s ease forwards;
+    animation-delay:0.9s;
+}
+.nav-bar ul li:nth-child(5){
+    animation:nav-right 1s ease forwards;
+    animation-delay:1.2s;
+}
+.nav-bar ul{
+    list-style-type: none;
+    top:2px;
+    font-size:5.5vmax;
+    width:35vmax;
+    margin-top:5vmax;
+    
+}
+.nav-bar ul li{
+    margin-left:-10vmax;
+    margin-bottom:1vmax;
+}
+.nav-bar-social{
+    animation:down-top 1s ease forwards;
+    font-size:8vmax;
+    position: absolute;
+}
+.nav-bar-social:nth-child(1){
+    animation:down-top 1s ease forwards;
+    animation-delay:s;
+}
+
+/* Introduction*/
+
+.introduction-container{
+margin-left:5vmax;
+margin-top:5vmax;
+}
+.introduction-img{
+    position:absolute;
+    right:2px;
+    top:-50px;
+    width: 30vw;
+}
+.hello{
+    font-size:2vmax;
+}
+.name{
+    font-size: 10vmax;
+    
+}
+.desc{
+    font-size:1.5vmax;
+}
+@keyframes line-right2{
+    0%{
+    top:6.5vmax;
+    left:15vmax;
+    width:0vmax;
+    }
+    100%{
+    top:6.5vmax;
+    left:15vmax;
+    width:8.3vmax;
+}
+}
+@keyframes line-right3{
+    0%{
+        top:35vmax;
+        width:0vmax;
+    }
+    100%{
+        top:35vmax;
+        width:36.3vmax;
+    }
+}
+.top-border{
+    position: absolute;
+    background:white;
+    width:19vmax;
+    height: 0.33vmax;
+    top:5.5vmax;
+}
+.line2{
+    animation: line-right2 ease-in 1s forwards;
+}
+.line3{
+    animation: line-right3 ease-in-out 1s forwards   ;
+}
+
+@keyframes line-right4 {
+    0%{
+        top:34vmax;
+        width:0vmax;
+    }100%{
+        top:34vmax;
+        width:35.5vmax;        
+    }
+}
+.line4{
+animation:line-right4 ease-in 2s forwards;
+}
+
+@keyframes up-down5{
+    0%{
+        height: 0vmax;
+        top:6.7vmax;
+        width:0.3vmax;
+        left:23vmax;
+    }100%{
+        height: 15vmax;
+        top:6.7vmax;
+        width:0.3vmax;
+        left:23vmax;
+    }
+    
+}
+.line5{
+    animation: up-down5 ease-in 2s forwards;
+}
+@keyframes up-down6{
+    0%{
+        height: 0vmax;
+        width:0.3vmax;
+        left:24vmax;
+    }100%{
+        height: 15vmax;
+        width:0.3vmax;
+        left:24vmax;
+    }
+}
+.line6{
+    animation:up-down6 ease-in 2s forwards;
+}
+@keyframes left-right7 {
+    0%{
+        top:20.2vmax;
+        width:0vmax;
+        left:24vmax;
+    }100%{
+        top:20.2vmax;
+        width:17.5vmax;
+        left:24vmax;
+    }
+}
+.line7{
+    animation:left-right7 ease-in 2s forwards;
+    animation-delay:2s;
+}
+@keyframes left-right8 {
+    0%{
+        top:21.4vmax;
+        width:0vmax;
+        left:23vmax;
+    }100%{
+        top:21.4vmax;
+        width:17.5vmax;
+        left:23vmax;
+    }
+}
+.line8{
+    animation:left-right8 ease 2.3s forwards;
+    animation-delay: 2s;
+}
+@keyframes down-9 {
+    0%{
+        height: 0vmax;
+        width:0.3vmax;
+        top:20.2vmax;
+        left:41.2vmax;
+    }
+    100%{
+        height: 11vmax;
+        width:0.3vmax;
+        top:20.2vmax;
+        left:41.2vmax;
+    }
+}
+.line9{
+    animation:down-9 ease-in 3.5s forwards;
+    animation-delay: 1s;
+}
+@keyframes down-10{
+    0%{
+        height: 0vmax;
+        width:0.3vmax;
+        top:21.6vmax;
+        left:40.2vmax;
+    
+    }
+    100%{
+        height: 9.6vmax;
+        width:0.3vmax;
+        top:21.6vmax;
+        left:40.2vmax;
+    
+    }
+}
+.line10{
+    animation:down-10 ease-in-out 3s forwards;
+    animation-delay: 2s;
+}
+@keyframes down-11{
+    0%{
+        height: 0vmax;
+        width:0.3vmax;
+        top:34vmax;
+        left:41.2vmax;
+    }
+    100%{
+        height: 1.3vmax;
+        width:0.3vmax;
+        top:34vmax;
+        background:white;
+        left:41.2vmax;
+    }
+}
+.line11{
+    animation: down-11 2s ease-in forwards;
+    animation-delay: 2s;
+}
+.bottom-border{
+    background-color: white;
+    position: absolute;
+    bottom:20px;
+    width:20vmax;
+    height:2mvax;
+}
+/* button  */
+
+.buttons{
+    margin:5vmax auto 2vmax 2vmax;
+    display:flex;
+}
+.buttons div{
+    padding: 0.5vmax 3vmax 0.5vmax 3vmax;
+    border:1px solid white;
+    margin-left:3vmax;
+    border-radius: 30vmax;
+    font-size:2vmax;
+    box-shadow: 0px 0px 0.5px 1px rgba(255,255,255,0.6) inset;
+}
+.social-media-container{
+    margin:1vmax auto 0 10vmax;
+    font-size:2vmax;
+}
+.social-media-container i{
+    margin-left:3%;
+}
+
+.invisible-div{
+ width:100%;
+}
+
+
+/*  My work  */
+
+
+h1{
+    margin-top:20vmax;
+    margin-bottom:18vmax;
+    font-size:10vmax;
+    text-align: center;
+    background:rgba(5, 5, 5, 0.99);
+    padding:2vmax 0 2vmax 0;
+}
+h2{
+    text-align: center;
+    font-size:3vmax;
+    margin-bottom:3vmax;
+}
+.website-container{
+    margin-bottom:40vmax;
+    margin-left:5vmax;
+}
+.website-container img{
+    margin-left:1vmax;
+}
+.about-me-label{
+    font-size:5vmax;
+    padding:2vmax 2vmax 2vmax 64vmax;
+    margin-right:10vmax;
+    margin-top:10vmax;
+    background:rgba(5, 5, 5, 0.99);
+}
+.about-me-desc{
+    margin-top:5vmax;
+    margin-bottom:5vmax;
+    margin:5vmax 4vmax 5vmax 4vmax;
+    font-size:1.2vmax;
+}
+
+
+/*  Languages I know  */
+
+
+.known-language{
+    text-align: center;
+}
+.known-language i{
+    font-size:8vmax;
+    color:black;
+    background:white;
+    width:9vmax;
+    padding:1vmax 1vmax 0 1vmax;
+    text-align: center;
+    border-radius:100px;
+    margin:2vmax 5vmax 2vmax 5vmax;
+}
+.known-programs{
+    text-align: center;
+}
+.known-programs img{
+    width:10vmax;
+    margin:1vmax 3vmax 1vmax 3vmax;
+}
+.program-language h2{
+    margin-top:5vmax;
+}
+
+/*  Contacts    */
+
+.contact{
+    display: flex;
+    font-size:3vmax;
+    margin:4vmax;
+}
+.contact div{
+ 
+}
+.contact-link{
+    margin-left:1vmax;
+}
+.contact-divider{
+    background:white;
+    clip-path: polygon(0 49%, 47% 0, 100% 47%, 48% 100%);
+}
+.contact-social-media{
+    display: flex;
+}
+.contact-social-media i{
+margin-bottom:1vmax;
+margin-top:2vmax;
+font-size: 2vmax;
+}
+.resume{
+    padding-left:20vmax;
+}
+.email{
+    padding-left:5vmax;
+}
+@media screen and (min-width:375px) and (max-width:450px) {
+    .about-me-label{
+        padding-left:30vmax;
+    }
+    .contact{
+        margin-left:0;
+        font-size: 2vmax;
+    }
+    .resume{
+
+    }
+}
+
+
+.burger-container{
+    margin:25px;
+}
+.cheeseburger{
+    background: white;
+    width:5vmax;
+    height: 0.5vmax;
+}
+.cheeseburger::after,
+.cheeseburger::before{
+    content:'';
+    background: white;
+    width:5vmax;
+    height: 0.5vmax;
+}
+.cheeseburger::before{  
+    transform: translateY(-10px);
+}
+.cheeseburger::after{
+    transform: translateY(10px);
+}
