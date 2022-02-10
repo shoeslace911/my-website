@@ -32,7 +32,7 @@ a{
 .back-to-top{
     top:5vmax;    
     bottom:32px;
-    width:10vmax;
+    
     height: 4%;    
     margin-left:-0.1vmax;
     position:fixed;
@@ -95,10 +95,10 @@ transition: 1s ease;
 }
 .nav-bar{
     position:fixed;
-    top:-100%;
+    top:-150%;
     list-style-type: none;
     background:rgb(4, 4, 12,0.5);
-    width:100%;
+    width:23vmax;
     min-height:100%;
     z-index: 1;
     transition: 0.2s; 
@@ -110,10 +110,17 @@ transition: 1s ease;
     top:0%;
     list-style-type: none;
     background:rgb(4, 4, 12,0.5);
-    width:100%;
-    min-height:100%;
+    width:23vmax;
     z-index: 1;
 }
+.nav-bar.open li{
+    font-size:2vmax;
+    margin-top:1vmax;
+}
+ .nav-bar.open a:hover{
+    border-bottom: white 1px solid;
+}
+
 .hamburger-inside-nav{
     background:white;
     opacity:50%;
@@ -164,7 +171,6 @@ transition: 1s ease;
 .nav-bar ul{
     list-style-type: none;
     top:2px;
-    font-size:5.5vmax;
     width:35vmax;
     margin-top:10vmax;
 }
@@ -172,11 +178,15 @@ transition: 1s ease;
     margin-left:-10vmax;
     margin-bottom:1vmax;
 }
-.nav-bar-social{
-    top:20vmax;
+.nav-bar-social {
+    top:40vmax;
+    left:10vmax;
     animation:down-top 1s ease forwards;
-    font-size:8vmax;
+    font-size:2vmax;
     position: absolute;
+}
+.nav-bar-social i{
+    font-size: 5vmax;
 }
 .nav-bar-social:nth-child(1){
     animation:down-top 1s ease forwards;
