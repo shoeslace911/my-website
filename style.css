@@ -109,13 +109,17 @@ transition: 1s ease;
     display: inline;
     top:0%;
     list-style-type: none;
-    background:rgb(4, 4, 12,0.5);
+    background:rgb(4, 4, 12);
     width:23vmax;
     z-index: 1;
 }
 .nav-bar.open li{
+
     font-size:2vmax;
     margin-top:1vmax;
+}
+.nav-bar.open ul {
+    margin-left:-5vmax;
 }
  .nav-bar.open a:hover{
     border-bottom: white 1px solid;
@@ -174,19 +178,17 @@ transition: 1s ease;
     width:35vmax;
     margin-top:10vmax;
 }
-.nav-bar ul li{
-    margin-left:-10vmax;
-    margin-bottom:1vmax;
-}
 .nav-bar-social {
-    top:40vmax;
-    left:10vmax;
+    display: flex;
+    top:22vmax;
+    left:1vmax;
     animation:down-top 1s ease forwards;
     font-size:2vmax;
     position: absolute;
 }
 .nav-bar-social i{
-    font-size: 5vmax;
+    font-size: 3vmax;
+    margin-left:2vmax;
 }
 .nav-bar-social:nth-child(1){
     animation:down-top 1s ease forwards;
