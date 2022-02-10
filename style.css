@@ -6,17 +6,20 @@
     box-sizing: border-box;
     color:white;
     font-family: 'Poiret One', cursive;
-
+    scroll-behavior: smooth;
 }
 body{
     background: black;
 }
-nav{
-    top:2vmax;
+.hamburger-nav-container{
+    padding-top:1vmax;
+    top:1vmax;
+    width:2.6vmax;
+    height: 4%;    
     margin-left:1vmax;
-    position:sticky;
-    
-    
+    position:fixed;
+    cursor: pointer;
+    z-index: 2;
 }
 a{
     text-decoration: inherit;
@@ -25,43 +28,91 @@ a{
 
 /* hamburger  and nav */
 
-.hamburger{
-background: white;
-width:2%;
-height: 2px;
-}
-.hamburger::before,
-.hamburger::after{
-    top:2vmax;
-    margin-left:1vmax;
 
+.back-to-top{
+    top:5vmax;    
+    bottom:32px;
+    width:10vmax;
+    height: 4%;    
+    margin-left:-0.1vmax;
+    position:fixed;
+    cursor: pointer;
+}
+.hamburger{
+    overflow: none;
 background: white;
-width:2%;
+width:fit-content;
 height: 2px;
+transition: 1s ease; 
 }
 .hamburger::before{
     content:'';
-    transform:translateY(1px);
+    transition: 0.5s ease; 
+    opacity: 100%;
+    display: block;
+    background: white;
+    width:2vmax;
+    height: 2px;
+    transition: 0.5s ease; 
+    transform: translateY(0.6vmax);
 }
 .hamburger::after{
-
+    content:'';
+    display: block;
+    background: white;
+    width:2vmax;
+    height:2px;
+    transition: 0.5s ease; 
+    transform: translateY(-0.7vmax);
+}
+.hamburger.X{
+    background: black;
+    width:2vmax;
+    transition: 1s ease; 
+    height: 2px;
+    transition: 5ms ease; 
+    }
+.hamburger.X::after{
+    content:'';
+    transition: 0.5s ease; 
+    display: block;
+    margin-left: 4%;
+    margin-top:-0.1vmax;
+    background: white;
+    width:2vmax;
+    height:2px;
+    transform: rotate(43deg);
+}
+.hamburger.X::before{
+    content:'';
+    transition: 0.5s ease; 
+    display: block;
+    background: white;
+    width:2vmax;
+    height:2px;
+    margin-right:15%;
+    transform: rotate(-45deg);
 }
 .nav-bar{
-    list-style-type: none;
     position:fixed;
-    background:rgb(4, 4, 12);
+    top:-100%;
+    list-style-type: none;
+    background:rgb(4, 4, 12,0.5);
     width:100%;
     min-height:100%;
-    overflow-y: hidden;
     z-index: 1;
-    display: none;
+    transition: 0.2s; 
 }
-@keyframes become-X {
-    0%{
-
-    }100%{
-        
-    }
+.nav-bar.open{
+    transition: 0.2s; 
+    position:fixed;
+    display: inline;
+    top:0%;
+    list-style-type: none;
+    background:rgb(4, 4, 12,0.5);
+    width:100%;
+    min-height:100%;
+    z-index: 1;
 }
 .hamburger-inside-nav{
     background:white;
@@ -92,37 +143,37 @@ height: 2px;
     }
     }
 .nav-bar ul li:nth-child(1){
-    animation:nav-right 1s ease-in forwards;
+    animation:nav-right 0.5s ease-in-out forwards;
 }
 .nav-bar ul li:nth-child(2){
-    animation:nav-right 1s ease-in forwards;
-    animation-delay:0.3s;
+    animation:nav-right 0.5s ease-in-out forwards;
+    animation-delay:0.1s;
 }
 .nav-bar ul li:nth-child(3){
-    animation:nav-right 1s ease forwards;
-    animation-delay:0.6s;
+    animation:nav-right 0.5s ease-in-out forwards;
+    animation-delay:0.2s;
 }
 .nav-bar ul li:nth-child(4){
-    animation:nav-right 1s ease forwards;
-    animation-delay:0.9s;
+    animation:nav-right 0.5s ease-in-out forwards;
+    animation-delay:0.3s;
 }
 .nav-bar ul li:nth-child(5){
-    animation:nav-right 1s ease forwards;
-    animation-delay:1.2s;
+    animation:nav-right 0.5s ease-in-out forwards;
+    animation-delay:0.4s;
 }
 .nav-bar ul{
     list-style-type: none;
     top:2px;
     font-size:5.5vmax;
     width:35vmax;
-    margin-top:5vmax;
-    
+    margin-top:10vmax;
 }
 .nav-bar ul li{
     margin-left:-10vmax;
     margin-bottom:1vmax;
 }
 .nav-bar-social{
+    top:20vmax;
     animation:down-top 1s ease forwards;
     font-size:8vmax;
     position: absolute;
@@ -136,7 +187,7 @@ height: 2px;
 
 .introduction-container{
 margin-left:5vmax;
-margin-top:5vmax;
+margin-top:6vmax;
 }
 .introduction-img{
     position:absolute;
@@ -462,27 +513,4 @@ font-size: 2vmax;
     .resume{
 
     }
-}
-
-
-.burger-container{
-    margin:25px;
-}
-.cheeseburger{
-    background: white;
-    width:5vmax;
-    height: 0.5vmax;
-}
-.cheeseburger::after,
-.cheeseburger::before{
-    content:'';
-    background: white;
-    width:5vmax;
-    height: 0.5vmax;
-}
-.cheeseburger::before{  
-    transform: translateY(-10px);
-}
-.cheeseburger::after{
-    transform: translateY(10px);
 }

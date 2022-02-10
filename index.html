@@ -13,21 +13,23 @@
 </head>
 <div class="nav-bar">
     <ul>
-        <li>Home</li>
-        <li>My work</li>
-        <li>About me</li>
-        <li>Contacts</li>
-        <li>Blog</li>
+        <li class="onClick"><a href="#my-work">My work</a></li>
+        <li class="onClick"><a href="#about-me">About me</a></li>
+        <li class="onClick"><a href="#contact">Contacts</a></li>
+        <li class="onClick">Blog</li>
     </ul>
     <div class="nav-bar-social">
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-github-square"></i>
+        <a href="https://www.facebook.com/OkraHarvester/"><i class="fab fa-facebook-square"></i></a>
+        <a><i class="fab fa-twitter-square"></i></a>
+        <a><i class="fab fa-linkedin"></i></a>
+        <a><i class="fab fa-github-square"></i></a>
     </div>
 </div>
-<nav>
+<nav class="hamburger-nav-container">
     <div class="hamburger"></div>
+    <div class="back-to-top-container">
+    </div>
+    <a href="#home"><div class="back-to-top">&#x2191;</div></a>
 </nav>
 <body> <!--Invisble div so that next section will not be overlapped by this section-->
     <section>
@@ -45,15 +47,15 @@
     <div class="top-border line10"></div>
     <div class="top-border line11"></div>
     <!--Name line design end-->
-    <p class="hello">Hello I am,</p>
+    <p id="home" class="hello">Hello I am,</p>
 <p class="name">Sho<br>Fujiwara</p>
 <p class="desc">and I am a junior frontend developer and designer based on Japan</p>
 <div class="buttons">
 <a href="#my-work"><div>My work</div></a>
-<div>Contact</div>
+<div><a href="#contact">Contact</div></a>
 </div>
 <div class="social-media-container">
-    <i class="fab fa-facebook-square"></i>
+    <a href="https://www.facebook.com/OkraHarvester/"><i class="fab fa-facebook-square"></i></a>
     <i class="fab fa-twitter-square"></i>
     <i class="fab fa-linkedin"></i>
     <i class="fab fa-github-square"></i>
@@ -72,7 +74,7 @@
 </div>
 </section>
 <section class="about-me-container">
-    <div class="about-me-label">About me</div>
+    <div id="about-me" class="about-me-label">About me</div>
     <p class="about-me-desc">I am Sho Fujiwara and as of 2022 have been coding and designing for a year and a half prior to that I've been a bartender and knew nothing about coding and computers outside video games. 
         <br><br>
         I specialize in Frontend and Graphics design and always find myself getting sucked into the world of designing and can't stop until I finish something.</p>
@@ -103,7 +105,7 @@
     </section>
     <section>
     <h1>Contact</h1>
-    <div class="contact">
+    <div id="contact" class="contact">
     <div class="email">My Email<br class="contact-link">shofujiwara505@gmail.com
     <div class="social-media-container contact-social-media">
         <i class="fab fa-facebook-square"></i>
@@ -121,3 +123,4 @@
 </div>
 </body>
 </html>
+<script src="javascript.js"></script>
