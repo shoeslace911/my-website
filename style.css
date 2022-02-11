@@ -22,7 +22,7 @@ body{
     z-index: 2;
 }
 a{
-    text-decoration: inherit;
+    text-decoration: none;
 }
 /*   Classess   */
 
@@ -32,11 +32,11 @@ a{
 .back-to-top{
     top:5vmax;    
     bottom:32px;
-    
+    left:1vmax;
     height: 4%;    
-    margin-left:-0.1vmax;
     position:fixed;
     cursor: pointer;
+    z-index: 1;
 }
 .hamburger{
     overflow: none;
@@ -114,15 +114,22 @@ transition: 1s ease;
     z-index: 1;
 }
 .nav-bar.open li{
-
     font-size:2vmax;
+    display:block;
     margin-top:1vmax;
+}
+.nav-bar.open li::after{
+    content: '';
+    width:0vmax;
+    height: 1px;
+    background-color: white;
+    display:block;
+    transform-origin: bottom left;
+    transition: 0.1s;
+    transform:translate(-0.5vmax, -0.1vmax);
 }
 .nav-bar.open ul {
     margin-left:-5vmax;
-}
- .nav-bar.open a:hover{
-    border-bottom: white 1px solid;
 }
 
 .hamburger-inside-nav{
@@ -146,8 +153,7 @@ transition: 1s ease;
         right:8vmax;
         bottom:0vmax;
         font-size:8vmax;
-    }100%{
-        
+    }100%{  
     right:8vmax;
     bottom:19vmax;
     font-size:8vmax;
@@ -178,21 +184,30 @@ transition: 1s ease;
     width:35vmax;
     margin-top:10vmax;
 }
-.nav-bar-social {
+.nav-bar-social{
     display: flex;
-    top:22vmax;
-    left:1vmax;
-    animation:down-top 1s ease forwards;
-    font-size:2vmax;
-    position: absolute;
+    margin-top: 50px;
+    height: fit-content;
+    width: fit-content;
+}
+.nav-bar-social a{
+    height: fit-content;
+    transition: 0.2s;
+    margin-left:2vmax;
+    margin-top:5vmax;
+    width:3vmax;
+}
+.fab{
+    transition: 0.2s;
+}
+a:hover .fab{
+    color:black;
+    border-radius: 10%;
+    background-color: white;
+    transition: 0.2s;
 }
 .nav-bar-social i{
     font-size: 3vmax;
-    margin-left:2vmax;
-}
-.nav-bar-social:nth-child(1){
-    animation:down-top 1s ease forwards;
-    animation-delay:s;
 }
 
 /* Introduction*/
@@ -404,18 +419,24 @@ animation:line-right4 ease-in 2s forwards;
     border-radius: 30vmax;
     font-size:2vmax;
     box-shadow: 0px 0px 0.5px 1px rgba(255,255,255,0.6) inset;
+    transition: 0.2s ease-in-out;
+}
+.buttons div:hover{
+    background-color: white;
+    box-shadow: 0px 0px 0.5px 1px rgba(000,000,000,0.6) inset;
+    transition: 0.2s ease-in-out;
+    color:black;
 }
 .social-media-container{
-    margin:1vmax auto 0 10vmax;
-    font-size:2vmax;
+    margin-left:3vmax;
+    position:relative;
 }
 .social-media-container i{
-    margin-left:3%;
+    font-size:2.6vmax;
+    margin-left:3vmax;
+    padding:0.5vmax 0.5vmax 0.5vmax 0.5vmax;
 }
 
-.invisible-div{
- width:100%;
-}
 
 
 /*  My work  */
