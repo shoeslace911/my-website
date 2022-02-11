@@ -128,6 +128,16 @@ transition: 1s ease;
     transition: 0.1s;
     transform:translate(-0.5vmax, -0.1vmax);
 }
+.nav-bar.open li:hover:after{
+    content: '';
+    width:10vmax;
+    height: 1px;
+    background-color: white;
+    display:block;
+    transform-origin: bottom left;
+    transition: 0.1s;
+    transform:translate(-0.5vmax, -0.1vmax);
+}
 .nav-bar.open ul {
     margin-left:-5vmax;
 }
@@ -458,6 +468,23 @@ h2{
 .website-container{
     margin-bottom:40vmax;
     margin-left:5vmax;
+    position:relative;
+}here
+.website-desc{
+    position:absolute;
+    width:40vmax;
+    height:fit-content;
+    background: grey;
+    padding:2%;
+}
+a:hover .website-desc{
+    opacity:0;
+}
+.website-container{
+    opacity: 1;
+}
+.website-desc h4{
+    margin-bottom:0.30rem;
 }
 .website-container img{
     margin-left:1vmax;
