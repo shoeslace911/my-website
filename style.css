@@ -628,6 +628,11 @@ font-size: 2vmax;
 .email{
     padding-left:5vmax;
 }
+@media screen and (min-width:376px) and (max-width:800px){
+    .introduction-container{
+        margin-top:3vmax;
+    }
+}
 @media screen and (min-width:375px) and (max-width:450px) {
     .about-me-label{
         padding-left:30vmax;
