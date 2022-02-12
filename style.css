@@ -220,11 +220,19 @@ a:hover .fab{
     font-size: 3vmax;
 }
 
+
 /* Introduction*/
 
 .introduction-container{
 margin-left:5vmax;
-margin-top:6vmax;
+margin-top:5vmax;
+padding-top:20px;
+}
+#home{
+    content:'';
+    display:block;
+    position:absolute;
+    margin-top:-10vmax
 }
 .introduction-img{
     position:absolute;
@@ -469,22 +477,90 @@ h2{
     margin-bottom:40vmax;
     margin-left:5vmax;
     position:relative;
-}here
-.website-desc{
-    position:absolute;
-    width:40vmax;
-    height:fit-content;
-    background: grey;
-    padding:2%;
 }
-a:hover .website-desc{
+.website-desc{
+    width:50vmax;
+    top:7vmax;
+    position:absolute;
+    height:fit-content;
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding:2%;
+    transition:0.5s ease-out;
+    pointer-events: none;
+    font-size: large;
+    line-height: 2vmax;
     opacity:0;
 }
-.website-container{
+.website-desc-1{
+    width:50vmax;
+    top:7vmax;
+    position:absolute;
+    height:fit-content;
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding:2%;
+    transition:0.5s ease-out;
+    pointer-events: none;
+    font-size: large;
+    line-height: 2vmax;
+    opacity:0;
+}
+.website-img:hover ~ .website-desc{ 
     opacity: 1;
+}
+.website-img-1:hover ~ .website-desc-1{ 
+    opacity: 1;
+}
+.website-container h4{
+    z-index: 2;
+}
+.website-name-container-1{
+    background-image: url(img/diamond-cas.png);
+    filter: blur(px);
+    opacity: 20%;
+    background-size: cover;
+    width:5vmax;
+    z-index: 1;
+    height: 2vmax;
+    -webkit-filter: blur(8px);
+    width:45vmax;
+    height: 10vmax;
+    left:-10vmax;
+    top:-50px;
+}
+.website-name-container{
+    background-image: url(img/aperture-games.png);
+    filter: blur(px);
+    opacity: 20%;
+    background-size: cover;
+    width:5vmax;
+    z-index: 1;
+    height: 2vmax;
+    -webkit-filter: blur(8px);
+    width:45vmax;
+    height: 10vmax;
+    left:-10vmax;
+    top:-50px;
+}
+.website-name-and-desc{
+    margin-top:-10%;
+}
+.website-name-and-desc h4{
+    font-size:5vmax;
 }
 .website-desc h4{
     margin-bottom:0.30rem;
+    background-size: cover;
+    padding: 2%;
+    margin-bottom:1vmax;
+    top:0;
 }
 .website-container img{
     margin-left:1vmax;
