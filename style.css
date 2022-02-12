@@ -38,7 +38,11 @@ h2{
     font-size:3vmax;
     margin-bottom:3vmax;
 }
-
+h4{
+    font-size: 2vmax;
+    margin-bottom:2vmax;
+    padding:1vmax;
+}
 /*   Classess   */
 
 /* hamburger  and nav */
@@ -475,97 +479,15 @@ animation:line-right4 ease-in 2s forwards;
 /*  My work  */
 
 
-.website-container{
-    margin-bottom:40vmax;
-    margin-left:5vmax;
-    position:relative;
-}
-.website-desc{
-    width:50vmax;
-    top:7vmax;
-    position:absolute;
-    height:fit-content;
-    background: rgba( 255, 255, 255, 0.15 );
-    backdrop-filter: blur( 0px );
-    -webkit-backdrop-filter: blur( 0px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    padding:2%;
-    transition:0.5s ease-out;
-    pointer-events: none;
-    font-size: large;
-    line-height: 2vmax;
-    opacity:0;
-}
-.website-desc-1{
-    width:50vmax;
-    top:7vmax;
-    position:absolute;
-    height:fit-content;
-    background: rgba( 255, 255, 255, 0.15 );
-    backdrop-filter: blur( 0px );
-    -webkit-backdrop-filter: blur( 0px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    padding:2%;
-    transition:0.5s ease-out;
-    pointer-events: none;
-    font-size: large;
-    line-height: 2vmax;
-    opacity:0;
-}
-.website-img:hover ~ .website-desc{ 
-    opacity: 1;
-}
-.website-img-1:hover ~ .website-desc-1{ 
-    opacity: 1;
-}
-.website-name-and-desc h4{
+
+and-desc h4{
     font-size:5vmax;
-}
-.website-name-container-1{
-    background-image: url(img/diamond-cas.png);
-    filter: blur(px);
-    opacity: 20%;
-    background-size: cover;
-    width:5vmax;
-    z-index: 1;
-    height: 2vmax;
-    -webkit-filter: blur(8px);
-    width:45vmax;
-    height: 10vmax;
-    left:-10vmax;
-    top:-50px;
-}
-.website-name-container{
-    background-image: url(img/aperture-games.png);
-    filter: blur(px);
-    opacity: 20%;
-    background-size: cover;
-    width:5vmax;
-    z-index: 1;
-    height: 2vmax;
-    -webkit-filter: blur(8px);
-    width:45vmax;
-    height: 10vmax;
-    left:-10vmax;
-    top:-50px;
 }
 .website-name-and-desc{
     margin-top:-10%;
 }
 .website-name-and-desc h4{
     font-size:5vmax;
-}
-.website-desc h4{
-    margin-bottom:0.30rem;
-    background-size: cover;
-    padding: 2%;
-    margin-bottom:1vmax;
-    top:0;
-}
-.website-container img{
-    margin-left:1vmax;
 }
 .about-me-label{
     font-size:5vmax;
@@ -584,7 +506,52 @@ animation:line-right4 ease-in 2s forwards;
 
 /*  Languages I know  */
 
-
+.my-website-wrapper{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    padding:2vmax;
+    margin:1vmax;
+}
+.website-desc-container{
+    display:relative;
+    width:30vmax;
+    padding:1vmax;
+    line-height: 1.5vmax;
+    opacity: 0;
+    font-size: 1vmax;
+    transition:0.5s;
+    transform:translateY(-5%);
+}
+.website-desc-container{
+    width:fit-content;
+    height: fit-content;
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur(0px );
+    -webkit-backdrop-filter: blur( 13px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    pointer-events: none;
+}
+.website-img{
+    width:100%;
+}
+.website-img-background{
+    position:absolute;
+    bottom:30%;
+    left:10%;
+    width:50%;
+    height:40%;
+    filter:blur(70px);
+    z-index: -1;
+    pointer-events: none;
+}
+.website-img:hover ~ .website-desc-container{
+    opacity: 1;
+    pointer-events: none;
+    transform:translate(0);
+    pointer-events: none;
+}
 .known-language{
    display: flex;
    align-items: center;
