@@ -24,6 +24,21 @@ body{
 a{
     text-decoration: none;
 }
+
+h1{
+    margin-top:20vmax;
+    margin-bottom:18vmax;
+    font-size:10vmax;
+    text-align: center;
+    background:rgba(5, 5, 5, 0.99);
+    padding:2vmax 0 2vmax 0;
+}
+h2{
+    text-align: center;
+    font-size:3vmax;
+    margin-bottom:3vmax;
+}
+
 /*   Classess   */
 
 /* hamburger  and nav */
@@ -225,7 +240,7 @@ a:hover .fab{
 
 .introduction-container{
 margin-left:5vmax;
-margin-top:5vmax;
+margin-top:4.5vmax;
 padding-top:20px;
 }
 #home{
@@ -245,7 +260,7 @@ padding-top:20px;
 }
 .name{
     font-size: 10vmax;
-    
+    margin-left:0.6vmax;
 }
 .desc{
     font-size:1.5vmax;
@@ -460,19 +475,6 @@ animation:line-right4 ease-in 2s forwards;
 /*  My work  */
 
 
-h1{
-    margin-top:20vmax;
-    margin-bottom:18vmax;
-    font-size:10vmax;
-    text-align: center;
-    background:rgba(5, 5, 5, 0.99);
-    padding:2vmax 0 2vmax 0;
-}
-h2{
-    text-align: center;
-    font-size:3vmax;
-    margin-bottom:3vmax;
-}
 .website-container{
     margin-bottom:40vmax;
     margin-left:5vmax;
@@ -518,8 +520,8 @@ h2{
 .website-img-1:hover ~ .website-desc-1{ 
     opacity: 1;
 }
-.website-container h4{
-    z-index: 2;
+.website-name-and-desc h4{
+    font-size:5vmax;
 }
 .website-name-container-1{
     background-image: url(img/diamond-cas.png);
@@ -584,7 +586,9 @@ h2{
 
 
 .known-language{
-    text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .known-language i{
     font-size:8vmax;
@@ -596,8 +600,31 @@ h2{
     border-radius:100px;
     margin:2vmax 5vmax 2vmax 5vmax;
 }
-.known-programs{
+.known-language-name{
+    opacity:0;
     text-align: center;
+    transform:translateY(-2vmax);
+    transition:0.5s;
+    font-size:2vmax;
+    pointer-events:none;
+}
+.fab:hover ~ .known-language-name{
+    opacity:1;
+    pointer-events: none;
+    transition: 0.5s;
+    transform:translateY(-1vmax);
+}
+.known-language-img{
+    width:9vmax;
+    text-align: center;
+    justify-content: center;
+    margin-left:4vmax;
+    transition:0.1s;
+}
+.known-language-img:hover ~ .known-language-name{
+    opacity:1;
+    transition: 0.1s;
+    transform: translate(2vmax, 1vmax);
 }
 .known-programs img{
     width:10vmax;
@@ -606,16 +633,12 @@ h2{
 .program-language h2{
     margin-top:5vmax;
 }
-
 /*  Contacts    */
 
 .contact{
     display: flex;
     font-size:3vmax;
     margin:4vmax;
-}
-.contact div{
- 
 }
 .contact-link{
     margin-left:1vmax;
