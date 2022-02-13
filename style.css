@@ -123,21 +123,14 @@ transition: 1s ease;
     position:fixed;
     top:-150%;
     list-style-type: none;
-    background:rgb(4, 4, 12,0.5);
+    background:rgb(4, 4, 12);
     width:23vmax;
     min-height:100%;
     z-index: 1;
     transition: 0.2s; 
 }
 .nav-bar.open{
-    transition: 0.2s; 
-    position:fixed;
-    display: inline;
     top:0%;
-    list-style-type: none;
-    background:rgb(4, 4, 12);
-    width:23vmax;
-    z-index: 1;
 }
 .nav-bar.open li{
     font-size:2vmax;
@@ -207,11 +200,11 @@ transition: 1s ease;
     animation-delay:0.2s;
 }
 .nav-bar ul li:nth-child(4){
-    animation:nav-right 0.5s ease-in-out forwards;
+    animation:nav-right 1s ease-in-out forwards;
     animation-delay:0.3s;
 }
 .nav-bar ul li:nth-child(5){
-    animation:nav-right 0.5s ease-in-out forwards;
+    animation:nav-right s ease-in-out forwards;
     animation-delay:0.4s;
 }
 .nav-bar ul{
@@ -245,7 +238,6 @@ a:hover .fab{
 .nav-bar-social i{
     font-size: 3vmax;
 }
-
 
 /* Introduction*/
 
@@ -523,7 +515,7 @@ and-desc h4{
     display:relative;
     width:30vmax;
     padding:1vmax;
-    line-height: 1.5vmax;
+    line-height: 1.2vmax;
     opacity: 0;
     font-size: 1vmax;
     transition:0.5s;
@@ -538,6 +530,11 @@ and-desc h4{
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     pointer-events: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.website-desc-container p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 .website-img{
     width:100%;
@@ -562,6 +559,10 @@ and-desc h4{
    display: flex;
    align-items: center;
    justify-content: center;
+}
+.known-language.grid-version{
+    display:flex;
+    flex-wrap: nowrap;
 }
 .known-language i{
     font-size:8vmax;
@@ -665,7 +666,10 @@ font-size: 2vmax;
 @media screen and (min-width:375px) and (max-width:450px) {
     .introduction-container{
         margin-left:5vmax;
-        margin-top:10vmax;
+        margin-top:29vmax;
+    }
+    .top-border{
+        margin-top:30vmax;
     }
     .buttons div{
         font-size:4vmax;
@@ -713,12 +717,13 @@ font-size: 2vmax;
     }
     .introduction-img{
         z-index: -2;
-        opacity:50%;
-        margin-top:10vmax;
-        margin-right:2vmax;
+        opacity:30%;
+        margin-top:30vmax;
+        margin-right:10vmax;
     }
     .about-me-label{
         padding-left:30vmax;
+        
     }
     .contact{
         margin-left:0;
@@ -735,13 +740,26 @@ font-size: 2vmax;
     }
     .line3, .line4{
         margin-left:-5vmax;
-        margin-top:3vmax;
+        margin-top:10vmax;
     }
     .line7 ,.line8{
         margin-left:-20vmax;
-        margin-top:6vmax;
+        margin-top:9vmax;
     }
     .line11{
         display: none;
+    }
+    .nav-bar.open li{
+        font-size:3.5vmax;
+        margin-top:2vmax;
+    }
+    .nav-bar .open ul{
+    }
+    .buttons{
+        margin-left:-1vmax;
+    }
+    .social-media-container{
+        margin-left:-10vmax;
+        text-align: center;
     }
 }
