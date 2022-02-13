@@ -38,10 +38,17 @@ h2{
     font-size:3vmax;
     margin-bottom:3vmax;
 }
+h3{
+    font-size:6vmax;
+}
 h4{
-    font-size: 2vmax;
+    font-size:2vmax;
     margin-bottom:2vmax;
-    padding:1vmax;
+}
+h5{
+    font-size: 2vmax;
+    margin: 1vmax -7vmax 2vmax -7vmax;
+    padding:1vmax 0 1vmax 7vmax;
 }
 /*   Classess   */
 
@@ -293,8 +300,7 @@ padding-top:20px;
 }
 .top-border{
     position: absolute;
-    background:white;
-    width:19vmax;
+    background: linear-gradient(315deg, rgba(10,2,5,0) , rgba(210,105,30,1));   
     height: 0.33vmax;
     top:5.5vmax;
 }
@@ -628,12 +634,89 @@ font-size: 2vmax;
 .email{
     padding-left:5vmax;
 }
+.blog-body{
+    margin:7vmax;
+    padding:5vmax;
+}
 @media screen and (min-width:376px) and (max-width:800px){
     .introduction-container{
-        margin-top:3vmax;
+        margin-left:10vmax;
+    }
+    .buttons{
+        font-size: 10vmax;
+    }
+    .top-border{
+        background: linear-gradient(315deg, rgba(10,,5,0) , rgba(210,105,30,1));
+        z-index: -1;
+        margin-left:-12vmax;
+    }
+    .line4, .line5, .line6, .line9, .line10{
+        display: none;
+        transition:ease-in-out;
+    }
+    .line3, .line4{
+        margin-left:4vmax;
+        margin-top:2vmax;
+    }
+    .line11{
+        display: none;
     }
 }
 @media screen and (min-width:375px) and (max-width:450px) {
+    .introduction-container{
+        margin-left:5vmax;
+        margin-top:10vmax;
+    }
+    .buttons div{
+        font-size:4vmax;
+    }
+    .hamburger.X{
+        background: black;
+        width:2vmax;
+        transition: 1s ease; 
+        height: 2px;
+        transition: 5ms ease; 
+        }
+    .hamburger.X::after{
+        content:'';
+        transition: 0.5s ease; 
+        display: block;
+        margin-left: 0.1vmax;
+        margin-top:-0.2vmax;
+        background: white;
+        width:3vmax;
+        height:2px;
+        transform: rotate(45deg);
+    }
+    .hamburger.X::before{
+        content:'';
+        transition: 0.5s ease; 
+        display: block;
+        background: white;
+        width:3vmax;
+        height:2px;
+        margin-right:15%;
+        transform: rotate(-45deg);
+    }
+    .hamburger{
+        width:4vmax;
+        margin-top:1vmax;
+        margin-left:1vmax;
+    }
+    .hamburger::after{
+        width:4vmax;
+        transform: translateY(-1.2vmax);
+    }
+    .hamburger::before{
+        width:4vmax;
+        transform: translateY(0.8vmax);
+    }
+    .introduction-img{
+        z-index: -2;
+        opacity:50%;
+        margin-top:10vmax;
+        margin-right:2vmax;
+    }
     .about-me-label{
         padding-left:30vmax;
     }
@@ -641,7 +724,24 @@ font-size: 2vmax;
         margin-left:0;
         font-size: 2vmax;
     }
-    .resume{
-
+    .desc{
+        margin-left:-4vmax;
+        font-size: 3vmax;
+        text-align: center;
+    }
+    .line4, .line5, .line6, .line9, .line10{
+        display: none;
+        transition:ease-in-out;
+    }
+    .line3, .line4{
+        margin-left:-5vmax;
+        margin-top:3vmax;
+    }
+    .line7 ,.line8{
+        margin-left:-20vmax;
+        margin-top:6vmax;
+    }
+    .line11{
+        display: none;
     }
 }
