@@ -489,7 +489,7 @@ and-desc h4{
 }
 .about-me-label{
     font-size:5vmax;
-    padding:2vmax 2vmax 2vmax 60%;
+    padding:2vmax 2vmax 2vmax 50%;
     margin-right:10vmax;
     margin-top:10vmax;
     background:rgba(5, 5, 5, 0.99);
@@ -634,6 +634,12 @@ font-size: 2vmax;
     font-size:3vmax 1vmin;
     margin-left:2rem;
 }
+.resume-and-social{
+    margin-left:20%;
+}
+.resume-and-social a{
+    margin-top:-2vmax;
+}
 .email{
     padding-left:5vmax;
 }
@@ -642,6 +648,10 @@ font-size: 2vmax;
     padding:5vmax;
 }
 @media screen and (min-width:451px) and (max-width:800px){
+    .about-me-label{
+        margin-left:-10%;
+        font-size: 5vmax;
+    }
     .introduction-container{
         margin-left:10vmax;
     }
@@ -649,7 +659,7 @@ font-size: 2vmax;
         font-size: 10vmax;
     }
     .top-border{
-        background: linear-gradient(315deg, rgba(10,,5,0) , rgba(210,105,30,1));
+        background: linear-gradient(315deg, rgba(10,5,0) , rgba(210,105,30,1));
         z-index: -1;
         margin-left:-12vmax;
     }
@@ -692,12 +702,22 @@ font-size: 2vmax;
     .not-one-website{
         margin-top:10vmax;
     }
+    .resume-and-social{
+        margin-top:10vmax;
+        margin-left:3%;
+        margin-right:3%;
+    }
 }
-@media screen and (min-width:1px) and (max-width:450px) {
+@media screen and (min-width:320px) and (max-width:450px) {
     .introduction-container{
         margin-left:5vmax;
         margin-top:25vmax;
         margin-bottom:30vmax;
+    }
+    .about-me-label{
+        margin-left:-10%;
+        font-size: 2vmax;
+        padding-right:20%;
     }
     .introduction-img{
         margin-top:20vmax;
@@ -714,7 +734,7 @@ font-size: 2vmax;
         font-size: 10vmax;
     }
     .top-border{
-        background: linear-gradient(315deg, rgba(10,,5,0) , rgba(210,105,30,1));
+        background: linear-gradient(315deg, rgba(10,5,0) , rgba(210,105,30,1));
         z-index: -1;
         margin-left:-12vmax;
     }
@@ -760,9 +780,6 @@ font-size: 2vmax;
     .open li{
         font-size:10vmax;
     }
-    .about-me-label{
-        margin-left:-50%;
-    }
     .known-language.grid-version{
         display:flex;
         flex-direction: row;
@@ -791,4 +808,26 @@ font-size: 2vmax;
         padding-left:10%;
         margin-right:10%;
     }
+    .resume-and-social a{
+        margin-top:2vmax;
+    }
+}
+@media screen and (min-width:0px) and (max-width:320px){
+    *{
+        font-size:2vmax;
+    }
+    .name{
+        margin-left:-4vmax;
+    }
+    .resume-and-social a{
+        margin-top:3vmax;
+        padding-left:5vmax;
+    }   
+    .resume-and-social{
+        margin-left:-0.1vmax;
+    }
+    .buttons {
+        margin-left:-5vmax;
+    }
+    
 }
