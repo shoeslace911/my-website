@@ -133,7 +133,7 @@ transition: 1s ease;
     top:0%;
 }
 .nav-bar.open li{
-    font-size:2vmax;
+    font-size:3vmax;
     display:block;
     margin-top:1vmax;
 }
@@ -489,7 +489,7 @@ and-desc h4{
 }
 .about-me-label{
     font-size:5vmax;
-    padding:2vmax 2vmax 2vmax 64vmax;
+    padding:2vmax 2vmax 2vmax 60%;
     margin-right:10vmax;
     margin-top:10vmax;
     background:rgba(5, 5, 5, 0.99);
@@ -530,10 +530,9 @@ and-desc h4{
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     pointer-events: none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .website-desc-container p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poiret One', cursive;
 
 }
 .website-img{
@@ -557,12 +556,14 @@ and-desc h4{
 }
 .known-language{
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    justify-content: center;
+   margin-left:-5%;
 }
 .known-language.grid-version{
     display:flex;
-    flex-wrap: nowrap;
+    margin-left:-5%;
 }
 .known-language i{
     font-size:8vmax;
@@ -612,7 +613,7 @@ and-desc h4{
 .contact{
     display: flex;
     font-size:3vmax;
-    margin:4vmax;
+    margin:4%;
 }
 .contact-link{
     margin-left:1vmax;
@@ -630,7 +631,8 @@ margin-top:2vmax;
 font-size: 2vmax;
 }
 .resume{
-    padding-left:20vmax;
+    font-size:3vmax 1vmin;
+    margin-left:2rem;
 }
 .email{
     padding-left:5vmax;
@@ -639,7 +641,7 @@ font-size: 2vmax;
     margin:7vmax;
     padding:5vmax;
 }
-@media screen and (min-width:376px) and (max-width:800px){
+@media screen and (min-width:451px) and (max-width:800px){
     .introduction-container{
         margin-left:10vmax;
     }
@@ -662,77 +664,59 @@ font-size: 2vmax;
     .line11{
         display: none;
     }
+    .my-website-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-top:20%;
+    }
+    .website-desc-container{
+        opacity: 1;
+        background: inherit;
+        backdrop-filter: blur(0px );
+        -webkit-backdrop-filter: blur( 0px );
+        border:none;
+    }
+    .website-img{
+        width:100%;
+    }
+    .my-website-container{
+        display: flex;
+        flex-direction: column;
+        margin-top:-10%;
+    }
+    .website-desc-container{
+        font-size: 2vmax;
+        margin-top:5vmax;
+        line-height: 23px;
+    }
+    .not-one-website{
+        margin-top:10vmax;
+    }
 }
-@media screen and (min-width:375px) and (max-width:450px) {
+@media screen and (min-width:1px) and (max-width:450px) {
     .introduction-container{
         margin-left:5vmax;
-        margin-top:29vmax;
-    }
-    .top-border{
-        margin-top:30vmax;
-    }
-    .buttons div{
-        font-size:4vmax;
-    }
-    .hamburger.X{
-        background: black;
-        width:2vmax;
-        transition: 1s ease; 
-        height: 2px;
-        transition: 5ms ease; 
-        }
-    .hamburger.X::after{
-        content:'';
-        transition: 0.5s ease; 
-        display: block;
-        margin-left: 0.1vmax;
-        margin-top:-0.2vmax;
-        background: white;
-        width:3vmax;
-        height:2px;
-        transform: rotate(45deg);
-    }
-    .hamburger.X::before{
-        content:'';
-        transition: 0.5s ease; 
-        display: block;
-        background: white;
-        width:3vmax;
-        height:2px;
-        margin-right:15%;
-        transform: rotate(-45deg);
-    }
-    .hamburger{
-        width:4vmax;
-        margin-top:1vmax;
-        margin-left:1vmax;
-    }
-    .hamburger::after{
-        width:4vmax;
-        transform: translateY(-1.2vmax);
-    }
-    .hamburger::before{
-        width:4vmax;
-        transform: translateY(0.8vmax);
+        margin-top:25vmax;
+        margin-bottom:30vmax;
     }
     .introduction-img{
-        z-index: -2;
-        opacity:30%;
-        margin-top:30vmax;
+        margin-top:20vmax;
         margin-right:10vmax;
+        z-index: -2;
+        width:100%;
+        opacity: 20%;
     }
-    .about-me-label{
-        padding-left:30vmax;
-        
-    }
-    .contact{
-        margin-left:0;
-        font-size: 2vmax;
-    }
-    .desc{
-        margin-left:-4vmax;
-        font-size: 3vmax;
+    .social-media-container{
         text-align: center;
+        margin-left:-11vmax;
+    }
+    .buttons{
+        font-size: 10vmax;
+    }
+    .top-border{
+        background: linear-gradient(315deg, rgba(10,,5,0) , rgba(210,105,30,1));
+        z-index: -1;
+        margin-left:-12vmax;
     }
     .line4, .line5, .line6, .line9, .line10{
         display: none;
@@ -742,24 +726,69 @@ font-size: 2vmax;
         margin-left:-5vmax;
         margin-top:10vmax;
     }
-    .line7 ,.line8{
-        margin-left:-20vmax;
-        margin-top:9vmax;
-    }
     .line11{
         display: none;
     }
-    .nav-bar.open li{
-        font-size:3.5vmax;
-        margin-top:2vmax;
+    .my-website-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-top:15vmax;
     }
-    .nav-bar .open ul{
+    .website-desc-container{
+        opacity: 1;
+        background: inherit;
+        backdrop-filter: blur(0px );
+        -webkit-backdrop-filter: blur( 0px );
+        border:none;
     }
-    .buttons{
-        margin-left:-1vmax;
+    .website-img{
+        width:100%;
     }
-    .social-media-container{
-        margin-left:-10vmax;
-        text-align: center;
+    .my-website-container{
+        display: flex;
+        flex-direction: column;
+        margin-top:-10%;
+    }
+    .website-desc-container{
+        font-size: 2vmax;
+        margin-top:5vmax;
+        line-height: 23px;
+    }
+    .not-one-website{
+        margin-top:10%
+}
+    .open li{
+        font-size:10vmax;
+    }
+    .about-me-label{
+        margin-left:-50%;
+    }
+    .known-language.grid-version{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left:-5%;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .email{
+        margin-left:-10%;
+        margin-bottom:20%;
+    }
+    .resume{
+        margin-left:50%;
+    }
+    .nav-bar-social {
+    font-size:5vmax;
+    justify-content: center;
+    margin:0 auto 5% -2vmax;
+    }
+    .nav-bar-social i{
+        font-size:5vmax;
+        padding-left:10%;
+        margin-right:10%;
     }
 }
