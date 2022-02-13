@@ -444,7 +444,7 @@ animation:line-right4 ease-in 2s forwards;
 /* button  */
 
 .buttons{
-    margin:5vmax auto 2vmax 2vmax;
+    margin:5vmax auto 2vmax 1vmax;
     display:flex;
 }
 .buttons div{
@@ -732,6 +732,7 @@ font-size: 2vmax;
     }
     .buttons{
         font-size: 10vmax;
+        margin-left:-5%;
     }
     .top-border{
         background: linear-gradient(315deg, rgba(10,5,0) , rgba(210,105,30,1));
@@ -810,6 +811,9 @@ font-size: 2vmax;
     }
     .resume-and-social a{
         margin-top:2vmax;
+    }
+    .name{
+        margin-left:-5%;
     }
 }
 @media screen and (min-width:0px) and (max-width:320px){
