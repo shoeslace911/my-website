@@ -566,6 +566,9 @@ font-size: 2vmax;
     }
 }
 @media  screen and (max-width:425px) and (min-width:0) {
+    .introduction-container{
+        display:none;
+}
     .resume-and-social{
         display: none;
     }
