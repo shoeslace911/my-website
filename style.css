@@ -247,9 +247,24 @@ a:hover .fab{
 }
 
 /* Introduction*/
+@keyframes introduction-to-right {
+    0%{
+        
+        
+    }100%{
+        margin-left:0;
+    }
+}
+@keyframes opacity{
+    0%{
+opacity: 0;
+    }100%{
+opacity: 1;
+    }
+}
 
 .introduction-container{
-margin-left:10%;
+    margin-left: 10%;
 margin-right:10%;
 margin-top:3%;
 padding-top:20px;
@@ -258,17 +273,22 @@ padding-top:20px;
     content:'';
     display:block;
     position:absolute;
-    margin-top:-10vmax
 }
 .hello{
+    animation: opacity 1s ;
     font-size:2vmax;
 }
 .name{
     font-size: 10vmax;
-    margin-left:0.6vmax;
+    opacity: 0;
+    animation:opacity 1s ease-out forwards;
+    animation-delay: 1.6s;
 }
 .desc{
     font-size:1.5vmax;
+    opacity: 0;
+    animation:opacity 1s ease-out forwards;
+    animation-delay: 2.9s;
 }
 .bottom-border{
     background-color: white;
@@ -299,27 +319,27 @@ padding-top:20px;
 .mega-line-1{
     margin-right:1%;
     margin-top:-2%;
-    animation-delay:0.5s;
+    animation-delay:6s;
 }
 .mega-line-2{
     margin-right:2%;
     margin-top:-1%;
-    animation-delay:0.4s;
+    animation-delay:6.1s;
 }
 .mega-line-3{
     margin-right:3%;
     margin-top:-0.5%;
-    animation-delay:0.3s;
+    animation-delay:6.2s;
 }
 .mega-line-4{
     margin-right:4%;
     margin-top:-1%;
-    animation-delay:0.4s;
+    animation-delay:6.3s;
 }
 .mega-line-5{
     margin-right:5%;
     margin-top:-2%;
-    animation-delay:0.5s;
+    animation-delay:6.4s;
 }
 .mega-line1{
     height:80vmax;
@@ -337,6 +357,7 @@ padding-top:20px;
 .buttons{
     margin:5vmax auto 2vmax 1vmax;
     display:flex;
+
 }
 .buttons div{
     padding: 0.5vmax 3vmax 0.5vmax 3vmax;
@@ -349,6 +370,14 @@ padding-top:20px;
 .mywork{
     background:white;
     color:black;
+    opacity: 0;
+    animation:opacity 1s ease-out forwards;
+    animation-delay: 4.6s;
+}
+.contact-button{
+    opacity: 0;
+    animation:opacity 1s ease-out forwards;
+    animation-delay: 4.9s;
 }
 a:hover .mywork {
     background:black;
@@ -361,6 +390,10 @@ a:hover .mywork {
 .social-media-container{
     margin-left:3vmax;
     position:relative;
+    animation-delay:0.5s;
+    opacity: 0;
+    animation:opacity 1s ease-out forwards;
+    animation-delay: 4.9s;
 }
 .social-media-container i{
     font-size:2.6vmax;
@@ -416,14 +449,9 @@ a:hover .mywork {
     font-size:40px;
     color:white;
 }
-.sample-img1{
-    width:80%;
-    position: absolute;
-}
 .sample-img2{
-    width:80%;
-    right:5%;
-    top:10%;
+    width:100%;
+    margin-top:10vmax;
     -moz-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
     -webkit-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
     -ms-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
@@ -438,6 +466,7 @@ a:hover .mywork {
 .to-link{
     text-align: right;
     font-size:2vmax;
+    
 }
 .to-link-container{
     position: relative;
@@ -494,47 +523,66 @@ a:hover .mywork {
 .diamond-casino-container{
     position: relative;
     display: flex;
-    margin-top:15vmax;
+    margin-top:10vmax;
+    
 }
-.diamond-casino-container img{
-    width:20vmax;
-    height: 30vmax;
-    margin-top:5vmax;
+.diamond-casino-img{
+    width:80%;
+    height: inherit;
+    z-index: -3;
+    
+    margin-top:-23vmax;
     margin-left:10vmax; 
+    z-index: 2;
     -moz-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
--webkit-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
--ms-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
+    -webkit-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
+    -ms-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
+    box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
 }
 .diamond-casino-background{
     width:100%;
     position: absolute;
-    height: 43vmax;
+    height: 50vmax;
     top:0;
     background-color: rgb(124, 24, 155);
+    z-index: -2;
     opacity:40%;
-    z-index: -1;
     clip-path: polygon(0% 0%, 100% 21%, 100% 50%, 100% 81%, 0% 100%);
     -webkit-box-shadow: inset 13px 8px 48px 13px #000000; 
     box-shadow: inset 13px 8px 48px 13px #000000;
 }
 .website-desc-container-right{
-    width:40vmax;
-    margin-top:9vmax;
+    width:100vmax;
+    z-index: 1;
+    margin-top:12vmax;
     font-size:1.2vmax;
-    margin-left:8vmax;
+    margin-right:10%;
+    margin-left:10%;
+    z-index: 3;
 }
 .website-desc-container-right h4{
-    font-size:7vmax;
+    font-size:5vmax;
 }
 .to-link-diamond{
     float: right;
     margin-top:3vmax;
+    font-size: 2vmax;
+    display: inline-block;
 }
-.to-link-diamond:hover{
-    
+.to-link-diamond::after{
+    content: '';
+    display: block;
+    height: 2px;
+    margin-top:-0.4vmax;
+    background-color: white;
+    transition: transform 0.2s ease-out;
+    transform: scale(0);
+    transform-origin: bottom right;
 }
-
+.to-link-diamond:hover:after{
+    transform:scale(1);
+    transform-origin: bottom left;
+}
 
 /*  Languages I know  */
 
@@ -632,7 +680,21 @@ font-size: 2vmax;
     margin:7vmax;
     padding:5vmax;
 }
-@media screen and (max-width:768px) and (min-width:426px) {
+
+/*      RESPONSI)VE   */
+
+        /*Tablet*/
+
+@media screen and (max-width:995px) and (min-width:426px) {
+    .my-website-background{
+        height: 40vmax;
+    }
+    .website-desc-container p{
+        font-size:1.2vmax;
+    }
+    .sample-img2{
+        width:100%;
+    }
     .resume-and-social{
         display: none;
     }
@@ -647,20 +709,18 @@ font-size: 2vmax;
         margin-bottom:30vmax;
     }
 }
-@media  screen and (max-width:425px) and (min-width:0) {
 
-    .resume-and-social{
-        display: none;
-    }
-    .introduction-container{
-        margin-top:50vmax;
-        margin-bottom:35vmax;
-    }
+
+/*Mobiel*/
+
+
+@media  screen and (max-width:530px) and (min-width:0) {
     .name{
         font-size: 7vmax;
     }
     .introduction-container{
         margin-top:20vmax;
+        margin-bottom:35vmax;
     }
     .mega-line-1{
         margin-right:1%;
@@ -676,5 +736,75 @@ font-size: 2vmax;
     }
     .mega-line-5{
         margin-right:7%;
+    }
+    .contact{
+        display: none;
+    }
+    /*  My work - websites */
+    h2{
+        font-size:5vmax;
+    }
+    .my-website-container{
+        display: block;
+    }
+    .website-desc-container{
+        position: absolute;
+        width:90%;
+        top:70%;
+        text-align: center;
+        left:5%;
+    }
+    .my-website-container p{
+        font-size:2vmax;
+    }
+    .my-website-container h4{
+        font-size: 4vmax;
+    }
+    .sample-img2{
+        width:120%;
+        margin-left:-15.5%;
+    }
+    .diamond-casino-img{
+        position: absolute;
+        width:90%;
+        left:-15.5%;
+        height: inherit;
+    }
+    .diamond-casino-container{        
+        margin-top:50%;
+        margin-bottom: 30%;;
+    }
+    .my-website-background{
+        height: 135%;
+    }
+    .diamond-casino-background{
+        top:65%;
+    }
+    .website-desc-container-right{
+        z-index: 2;
+        margin-top:200%;
+        margin-right:10%;
+    }
+}
+@media  screen and (max-width:375px) and (min-width:0) {
+    .buttons{
+        margin-left:-10%;
+    }
+    .social-media-container{
+        margin-left:1%;
+    }
+    .my-website-background{
+        height: 130%;
+    }
+    .website-desc-container{
+        top:60%;
+    }
+    .diamond-casino-img{
+        left:-20%;
+    }
+}
+@media  screen and (max-width:320px) and (min-width:0) {
+    a .mywork{
+      font-size: smaller;
     }
 }
