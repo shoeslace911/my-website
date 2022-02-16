@@ -38,6 +38,7 @@ h1{
     text-align: center;
     background:rgba(5, 5, 5, 0.99);
     padding:2vmax 0 2vmax 0;
+    text-transform: capitalize;
 }
 h2{
     text-align: center;
@@ -417,12 +418,12 @@ a:hover .mywork {
 .website-name-and-desc h4{
     font-size:5vmax;
 }
+.about-me-container{
+    margin-top:30vmax;
+}
 .about-me-label{
     font-size:5vmax;
-    padding:2vmax 2vmax 2vmax 50%;
-    margin-right:10vmax;
-    margin-top:40vmax;
-    background:rgba(5, 5, 5, 0.99);
+
 }
 .about-me-desc{
     margin-top:5vmax;
