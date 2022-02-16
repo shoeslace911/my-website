@@ -388,7 +388,7 @@ a:hover .mywork {
     font-size:5vmax;
     padding:2vmax 2vmax 2vmax 50%;
     margin-right:10vmax;
-    margin-top:10vmax;
+    margin-top:40vmax;
     background:rgba(5, 5, 5, 0.99);
 }
 .about-me-desc{
@@ -399,27 +399,35 @@ a:hover .mywork {
 }
 .sample-and-desc{
     display: flex;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:-5%;
 }
 .website-desc-container{
     width:100vmax;
+    position: relative;
     margin-top:10vmax;
 }
 .website-desc-container p{
-    font-size:1.2vmax;
+    font-size: 1.2vmax;
+    color:white;
 }
 .website-desc-container h4{
     font-size:40px;
+    color:white;
 }
 .sample-img1{
     width:80%;
     position: absolute;
-    right:5%;
-    top:5%;
 }
 .sample-img2{
     width:80%;
     right:5%;
     top:10%;
+    -moz-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
+    -webkit-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
+    -ms-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
+    box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
 }
 .sample-img-container{
     position:relative;   
@@ -427,25 +435,51 @@ a:hover .mywork {
 .diamond-casino{
     margin-top:20%;
 }
-
-
-
-/*  Languages I know  */
-
-
+.to-link{
+    text-align: right;
+    font-size:2vmax;
+}
+.to-link-container{
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+.to-link-container::after{
+    content:'';
+    display: block;
+    margin-top:-0.5vmax;
+    transform:scale(0);
+    background-color: white;
+    height: 1.8px;
+    transition: transform 0.2s ease-out;
+    transform-origin: bottom right;
+}
+.to-link-container:hover::after{
+    transform: scale(1);
+    transform-origin: bottom left;
+}
 .my-website-wrapper{
     display:flex;
     flex-direction: column;
     grid-template-columns: 1fr; 
-    padding:2vmax;
-    margin:5% 10% 5% 10%;
 }
 .my-website-container{
-    background: rgb(26,16,102);
-    background: radial-gradient(circle, rgba(26,16,102,0) 7%, rgba(0,89,158,0.022846638655462215) 50%, rgba(0,0,0,0) 82%);
+    position: relative;
+}
+.my-website-background{
+    height: 23vmax;
+    width:100%;
+    position: absolute;
+    z-index: -1;
+    left:0;
+    top:1vmax;
+    background:rgba(46, 165, 139, 0.459);
+    -webkit-box-shadow: inset -1px 0px 11px 5px #000000; 
+    box-shadow: inset -1px 0px 11px 5px #000000;
 }
 .website-img{
-    width:100%;
+    width:70%;
+    margin-left:10%;
 }
 .website-img-background{
     position:absolute;
@@ -457,6 +491,54 @@ a:hover .mywork {
     z-index: -1;
     pointer-events: none;
 }
+.diamond-casino-container{
+    position: relative;
+    display: flex;
+    margin-top:15vmax;
+}
+.diamond-casino-container img{
+    width:20vmax;
+    height: 30vmax;
+    margin-top:5vmax;
+    margin-left:10vmax; 
+    -moz-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
+-webkit-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
+-ms-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
+box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
+}
+.diamond-casino-background{
+    width:100%;
+    position: absolute;
+    height: 43vmax;
+    top:0;
+    background-color: rgb(124, 24, 155);
+    opacity:40%;
+    z-index: -1;
+    clip-path: polygon(0% 0%, 100% 21%, 100% 50%, 100% 81%, 0% 100%);
+    -webkit-box-shadow: inset 13px 8px 48px 13px #000000; 
+    box-shadow: inset 13px 8px 48px 13px #000000;
+}
+.website-desc-container-right{
+    width:40vmax;
+    margin-top:9vmax;
+    font-size:1.2vmax;
+    margin-left:8vmax;
+}
+.website-desc-container-right h4{
+    font-size:7vmax;
+}
+.to-link-diamond{
+    float: right;
+    margin-top:3vmax;
+}
+.to-link-diamond:hover{
+    
+}
+
+
+/*  Languages I know  */
+
+
 .known-language{
    display: flex;
    flex-wrap: wrap;
@@ -566,9 +648,7 @@ font-size: 2vmax;
     }
 }
 @media  screen and (max-width:425px) and (min-width:0) {
-    .introduction-container{
-        display:none;
-}
+
     .resume-and-social{
         display: none;
     }
