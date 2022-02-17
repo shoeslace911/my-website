@@ -762,12 +762,15 @@ font-size: 2vmax;
     font-size: 2vmax 1vmin;
 }
 }
+.resume-and-social{
+    display: none;
+}
 
 
 /*Mobiel*/
 
 
-@media  screen and (max-width:594px) and (min-width:0) {
+@media  screen and (max-width:793px) and (min-width:0) {
     .name{
         font-size: 7vmax;
     }
@@ -840,6 +843,7 @@ font-size: 2vmax;
     }
     .website-desc-container-right{
         z-index: 2;
+        font-size:2vmax;
         margin-top:200%;
         margin-right:10%;
     }
@@ -850,22 +854,30 @@ font-size: 2vmax;
         margin-right: auto;
         margin-left: auto;
     }
-    .clipart-container{
-        margin-left:-1vmax;
-    }
     .known-language-description{
         width:100%;
         position: block;
         text-align: center;
-        margin-left:auto;
-        margin-right:auto;
         margin-top:-5vmax;
+        margin-left:auto;
+        margin-right:10vmax;
     }
     .known-language-description span{
         color:white;
     }
-}
-@media  screen and (max-width:376px) and (min-width:0px) {
+    .known-language{
+        margin-left:8vmax;
+    }
+    .languages-background{
+        background-color: white;
+        opacity: 100%;
+        -webkit-box-shadow: inset 5px 5px 50px 5px rgba(0,0,0,0.34); 
+    box-shadow: inset 5px 5px 50px 5px rgba(0,0,0,0.34);
+    }
+@media  screen and (max-width:385px) and (min-width:0px) {
+    h1{
+        font-size: 5vmax;
+    }
     .buttons{
         margin-left:-10%;
     }
@@ -885,10 +897,16 @@ font-size: 2vmax;
     /*  Lanuages I know  */
 
     .languages-container{
-        margin-left:-5vmax;
-        margin-right: 1vmax;
-    }here, you were trying to give the languages you know a responisve design
+        width:5vmax;
+        margin-left:-2rem;
+        
+    }
+    .known-language-description{
+        font-size:2vmax;
+        margin-left:1vmax;
+        margin-right:10vmax;
 }
+
 @media  screen and (max-width:320px) and (min-width:0) {
     a .mywork{
       font-size: smaller;
