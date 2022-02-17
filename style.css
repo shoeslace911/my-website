@@ -635,6 +635,18 @@ a:hover .mywork {
 -ms-box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.67);
 box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.67);
 }
+.known-language .fa-html5{
+    background-color: rgba(255, 38, 0, 0.808);
+    color:white;
+}
+.known-language .fa-css3-alt{
+    background-color: rgba(27, 32, 109, 0.644);
+    color:white;
+}
+.known-language .fa-js-square{
+    background-color: rgb(231, 210, 16);
+    color:white;
+}
 .known-language-name{
     opacity:1;
     position: absolute;
@@ -745,17 +757,17 @@ font-size: 2vmax;
 .known-language-description{
     left: 5vmax;
     width:20vmax;
-    margin-left:1.6vmax;
-    position:absolute;
+    margin-left:12vmax;
+    position:block;
     font-size: 2vmax 1vmin;
 }
-}here
+}
 
 
 /*Mobiel*/
 
 
-@media  screen and (max-width:530px) and (min-width:0) {
+@media  screen and (max-width:594px) and (min-width:0) {
     .name{
         font-size: 7vmax;
     }
@@ -781,7 +793,12 @@ font-size: 2vmax;
     .contact{
         display: none;
     }
+
+    
+    
     /*  My work - websites */
+    
+    
     h2{
         font-size:5vmax;
     }
@@ -826,8 +843,29 @@ font-size: 2vmax;
         margin-top:200%;
         margin-right:10%;
     }
+
+    /* About me  */
+    .languages-container{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .clipart-container{
+        margin-left:-1vmax;
+    }
+    .known-language-description{
+        width:100%;
+        position: block;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:-5vmax;
+    }
+    .known-language-description span{
+        color:white;
+    }
 }
-@media  screen and (max-width:375px) and (min-width:0) {
+@media  screen and (max-width:376px) and (min-width:0px) {
     .buttons{
         margin-left:-10%;
     }
@@ -843,6 +881,13 @@ font-size: 2vmax;
     .diamond-casino-img{
         left:-20%;
     }
+    
+    /*  Lanuages I know  */
+
+    .languages-container{
+        margin-left:-5vmax;
+        margin-right: 1vmax;
+    }here, you were trying to give the languages you know a responisve design
 }
 @media  screen and (max-width:320px) and (min-width:0) {
     a .mywork{
