@@ -518,9 +518,8 @@ a:hover .mywork {
     width:80%;
     height: inherit;
     z-index: -3;
-    
     margin-top:-23vmax;
-    margin-left:10vmax; 
+    margin-left:12vmax; 
     z-index: 2;
     -moz-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
     -webkit-box-shadow: 17px 12px 22px 6px rgba(0, 0, 0, 0.72);
@@ -582,7 +581,7 @@ a:hover .mywork {
     font-size:5vmax;
 }
 .about-me-desc{
-    margin-top:5vmax;
+    margin-top:10vmax;
     margin-bottom:5vmax;
     margin:5vmax 4vmax 5vmax 4vmax;
     font-size:1.2vmax;
@@ -597,8 +596,8 @@ a:hover .mywork {
     margin: 6vmax 5vmax 10vmax -6vmax;
 }
 .languages-background{
-    background-color: white;
-    opacity: 30%;
+    background-color: rgb(174, 229, 255);
+    opacity: 70%;
     width:100%;
     height: 20vmax;
     position:absolute;
@@ -665,24 +664,43 @@ box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.67);
 .javascript{
     left:5.8vmax;
 }
-.known-language-img{
-    width:9vmax;
-    text-align: center;
-    justify-content: center;
-    margin-left:4vmax;
-    transition:0.1s;
+.programs-wrapper{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 0px 0px; 
 }
-.known-language-img:hover ~ .known-language-name{
-    opacity:1;
-    transition: 0.1s;
-    transform: translate(2vmax, 1vmax);
+.programs-img img{
+    width:20%;
+    margin-left:15%;
 }
-.known-programs img{
-    width:10vmax;
-    margin:1vmax 3vmax 1vmax 3vmax;
+.programs-img{
+    right:0;
+    width: 100%
 }
-.program-language h2{
-    margin-top:5vmax;
+.programs-img1{
+    right:25%;
+}
+.programs-img2{
+    right:20%;
+}
+.programs-container{
+    margin-left:10%; 
+    position: relative;
+}
+.programs-label{
+    margin-left:15%;
+    position: absolute;
+    left:23%;
+    bottom:5vmax;
+    font-size:2vmax;
+}
+.programs-desc{
+font-size: 10vmax;
+margin-top:10vmax;
+}
+.programs-background1{
+    background-color: grey;
+    clip-path: circle(31.1% at 69% 78%);
 }
 /*  Contacts    */
 
@@ -702,7 +720,7 @@ box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.67);
     display: flex;
 }
 .contact-social-media i{
-margin-bottom:1vmax;
+margin-bottom:1vmax;here, you are making responsive mode for dear old programs i can do
 margin-top:2vmax;
 font-size: 2vmax;
 }
@@ -723,6 +741,8 @@ font-size: 2vmax;
     margin:7vmax;
     padding:5vmax;
 }
+
+
 
 /*      RESPONSI)VE   */
 
