@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Poiret+One&family=Quicksand:wght@300&display=swap');
-@font-face {
-    font-family: Noire;
-    src:url(/NoirStd-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Spartan:wght@100;400&display=swap');
 
 *{
     padding:0;
@@ -581,9 +578,7 @@ a:hover .mywork {
     font-size:5vmax;
 }
 .about-me-desc{
-    margin-top:10vmax;
-    margin-bottom:5vmax;
-    margin:5vmax 4vmax 5vmax 4vmax;
+    margin:40vmax 15% 5vmax 15%;
     font-size:1.2vmax;
 }
 .known-language{
@@ -665,23 +660,26 @@ box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.67);
     left:5.8vmax;
 }
 .programs-wrapper{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 0px 0px; 
-}
-.programs-img img{
-    width:20%;
-    margin-left:15%;
+    position: relative;
 }
 .programs-img{
     right:0;
-    width: 100%
+    width: 14vmax;
+    position: absolute;
+    border-radius: 100%;
+    -webkit-box-shadow: 19px 8px 44px 5px #000000; 
+    box-shadow: 19px 8px 44px 5px #000000;
 }
 .programs-img1{
-    right:25%;
+    top:8vmax;
+    left:5%;
 }
 .programs-img2{
-    right:20%;
+    left:13vmax;
+    top:4vmax;
+}
+.programs-img3{
+    left:5vmax;
 }
 .programs-container{
     margin-left:10%; 
@@ -693,14 +691,26 @@ box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.67);
     left:23%;
     bottom:5vmax;
     font-size:2vmax;
-}
+}here, you were desiginging programs responsive page
 .programs-desc{
+    position: absolute;
+    right:0;
 font-size: 10vmax;
 margin-top:10vmax;
+margin-right: 15vmax;
+font-family: 'Great Vibes', cursive;
+color: rgb(252, 206, 0);
+text-shadow: 3px 5px 2px #474747;
 }
-.programs-background1{
-    background-color: grey;
-    clip-path: circle(31.1% at 69% 78%);
+.programs-background{
+    background-color: rgb(255, 255, 255);
+    width:100%;
+    height:10vmax;
+    z-index: -1;
+    position: absolute;
+    top:8vmax;
+    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, inset -2px -34px 40px -30px rgba(0,0,0,0); 
+box-shadow: inset 4px 4px 15px 0px #000000, inset -2px -34px 40px -30px rgba(0,0,0,0);
 }
 /*  Contacts    */
 
@@ -720,7 +730,7 @@ margin-top:10vmax;
     display: flex;
 }
 .contact-social-media i{
-margin-bottom:1vmax;here, you are making responsive mode for dear old programs i can do
+margin-bottom:1vmax;
 margin-top:2vmax;
 font-size: 2vmax;
 }
