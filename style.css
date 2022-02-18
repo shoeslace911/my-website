@@ -716,8 +716,7 @@ box-shadow: inset 4px 4px 15px 0px #000000, inset -2px -34px 40px -30px rgba(0,0
 
 .contact{
     display: flex;
-    font-size:3vmax;
-    margin:4%;
+    font-size:3vmax;    
 }
 .contact-link{
     margin-left:1vmax;
@@ -735,11 +734,9 @@ margin-top:2vmax;
 font-size: 2vmax;
 }
 .resume{
-    font-size:3vmax 1vmin;
-    margin-left:2rem;
 }
 .resume-and-social{
-    margin-left:20%;
+    display:flex;
 }
 .resume-and-social a{
     margin-top:-2vmax;
@@ -769,7 +766,6 @@ font-size: 2vmax;
         width:100%;
     }
     .resume-and-social{
-        display: none;
     }
     .mega-line{
         width:1px;
@@ -791,9 +787,6 @@ font-size: 2vmax;
     position:block;
     font-size: 2vmax 1vmin;
 }
-}
-.resume-and-social{
-    display: none;
 }
 
 
@@ -822,9 +815,6 @@ font-size: 2vmax;
     }
     .mega-line-5{
         margin-right:7%;
-    }
-    .contact{
-        display: none;
     }
 
     
@@ -905,7 +895,15 @@ font-size: 2vmax;
     box-shadow: inset 5px 5px 50px 5px rgba(0,0,0,0.34);
     }
     .about-me-desc{
-        font-size: 2.1vmax;
+        font-size: 5%;
+    }
+    .contact{
+        display: block;
+    }
+    .resume-and-social{
+        margin-left:-5vmax;
+        margin-right: auto;
+        text-align: center;
     }
     
 @media  screen and (max-width:385px) and (min-width:0px) {
