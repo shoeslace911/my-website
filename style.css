@@ -664,7 +664,7 @@ box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.67);
 }
 .programs-img{
     right:0;
-    width: 14vmax;
+    width: 14vmax;  
     position: absolute;
     border-radius: 100%;
     -webkit-box-shadow: 19px 8px 44px 5px #000000; 
@@ -691,7 +691,7 @@ box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.67);
     left:23%;
     bottom:5vmax;
     font-size:2vmax;
-}here, you were desiginging programs responsive page
+}
 .programs-desc{
     position: absolute;
     right:0;
@@ -904,6 +904,10 @@ font-size: 2vmax;
         -webkit-box-shadow: inset 5px 5px 50px 5px rgba(0,0,0,0.34); 
     box-shadow: inset 5px 5px 50px 5px rgba(0,0,0,0.34);
     }
+    .about-me-desc{
+        font-size: 2.1vmax;
+    }
+    
 @media  screen and (max-width:385px) and (min-width:0px) {
     h1{
         font-size: 5vmax;
@@ -928,17 +932,38 @@ font-size: 2vmax;
 
     .languages-container{
         width:5vmax;
-        margin-left:-2rem;
-        
+        margin-left:-2rem;    
     }
     .known-language-description{
         font-size:2vmax;
         margin-left:1vmax;
         margin-right:10vmax;
-}
+}   
+    .programs-img1{
+        top:20vmax;
+    }
+    .programs-img2{
+        top:20vmax;
+    }
+    .programs-img3{
+        top:20vmax;
+        left:23vmax;
+    }
+    .programs-desc{
+        right:-5vmax;
+        left:8vmax;
+    }
+    .about-me-desc{
+        font-size: 2vmax;
+    }
 
 @media  screen and (max-width:320px) and (min-width:0) {
     a .mywork{
       font-size: smaller;
     }
-}
+    .programs-desc span{
+        position: absolute;
+        top:5vmax;
+        z-index: -1;
+    }
+}}}
