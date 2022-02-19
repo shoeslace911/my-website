@@ -45,3 +45,10 @@ window.addEventListener("scroll", function(e){
     target.style.transform = "translate3d(0vmax,"+rate+"px, 0)";
 });
 
+
+function showBody(){
+    setTimeout(function(){
+        document.querySelector(".show-body").style.display = "block";
+    }, 7000);
+}
+showBody();

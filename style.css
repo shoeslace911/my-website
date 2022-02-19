@@ -13,6 +13,10 @@
 }
 body{
     background: black;
+    display: block;
+}
+.show-body{
+    display: none;
 }
 .hamburger-nav-container{
     padding-top:1vmax;
