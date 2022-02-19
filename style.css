@@ -11,6 +11,12 @@
     font-weight: lighter;
     scroll-behavior: smooth;
 }
+.my-image{
+    width:20%;
+    margin-right:2vmax;
+    float:left;
+    border:2px white solid;
+}
 body{
     background: black;
     display: block;
@@ -836,6 +842,9 @@ font-size: 2vmax;
 
 
 @media  screen and (max-width:793px) and (min-width:0) {
+    .my-image{
+        width:50%;
+    }
     .name{
         font-size: 7vmax;
     }
@@ -958,6 +967,9 @@ font-size: 2vmax;
 
     }
 @media  screen and (max-width:385px) and (min-width:0px) {
+    .my-image{
+        width:100%;
+    }
     h1{
         font-size: 5vmax;
     }
