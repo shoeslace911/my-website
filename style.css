@@ -702,6 +702,9 @@ box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.67);
     bottom:5vmax;
     font-size:2vmax;
 }
+.this-website-link:hover{
+    text-decoration: underline;
+}
 .programs-desc{
     position: absolute;
     right:0;
@@ -722,6 +725,8 @@ text-shadow: 3px 5px 2px #474747;
     -webkit-box-shadow: inset 4px 4px 15px 0px #000000, inset -2px -34px 40px -30px rgba(0,0,0,0); 
 box-shadow: inset 4px 4px 15px 0px #000000, inset -2px -34px 40px -30px rgba(0,0,0,0);
 }
+
+
 /*  Contacts    */
 
 .contact{
@@ -957,7 +962,6 @@ font-size: 2vmax;
     .resume{
         margin-bottom:5vmax;
         position: block;
-
     }
     .resume-and-social .nav-bar-social{
         margin:inherit;
